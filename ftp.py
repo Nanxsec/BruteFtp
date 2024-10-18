@@ -69,8 +69,10 @@ if rhost and rport != "":
 							threads.start()
 							threads.join()
 							thread.append(threads)
-						except Exception as e:
-							print(e)
+						except ConnectionResetError:
+							print("\n\033[1;31m[-] IPS block, troque seu IP e tente novamente!\033[m")
+							raise SystemExit
+						except:
 							print("\n\033[1;31m[!]\033[m\033[1m Ooops:\033[m")
 							print("\033[1;31m[!]\033[m\033[1m Erro ao se conectar, servidor offline, tente mais tarde...\033[m\n")
 							server.close()
