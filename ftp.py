@@ -70,7 +70,9 @@ if rhost and rport != "":
 							threads.join()
 							thread.append(threads)
 						except ConnectionResetError:
+							server.close()
 							print("\n\033[1;31m[-] IPS block, troque seu IP e tente novamente!\033[m")
+							print("\033[1;31m[!]\033[m\033[1mDiminua a wordlist para um resultado mais eficaz!\033[m\n")
 							raise SystemExit
 						except:
 							print("\n\033[1;31m[!]\033[m\033[1m Ooops:\033[m")
