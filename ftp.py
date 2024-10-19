@@ -15,7 +15,6 @@ def Comandos():
 \033[1mComando [\033[m \033[1;32mLS\033[m \033[1m] - Para listar o diretório\033[m
 \033[1mComando [\033[m \033[1;32mCD\033[m \033[1m] - Para entrar dentro de um diretório\033[m
 \033[1mComando [\033[m \033[1;32mCL\033[m \033[1m] - Para limpar a tela\033[m
-\033[1mComando [\033[m \033[1;32mHP\033[m \033[1m] - Para visualizar os comandos do servidor (habilite o modo passivo primeiro)\033[m
 \033[1mComando [\033[m \033[1;32mPA\033[m \033[1m] - Para entrar no modo passivo (pode ser desconectado)\033[m
 \033[1mComando [\033[m \033[1;32mCW\033[m \033[1m] - Para entrar direto no diretório\033[m
 \033[1mComando [\033[m \033[1;32mDW\033[m \033[1m] - Para fazer o download de um arquivo\033[m
@@ -140,24 +139,6 @@ if logar == True:
 							entrar.cwd(directory.capitalize())
 						except:
 							print("\033[1m[\033[m\033[1;31m-\033[m\033[1m]\033[m\033[1m Permissão negada!\033[m")
-			elif comando_user == "hp":
-				print("\033[1m[\033[m\033[1;36m+\033[m\033[1m]\033[m\033[1m Todos esses comandos foram para o meu painel de help,\033[m \033[1;32mDIGITE C\033[m \033[1mpara ver!\033[m\n\n")
-				usernames = usern.encode()
-				passwords = paswd.encode()
-				try:
-					MYSOCKET.connect((rhost,rport))
-				except:
-					pass
-				baner_pass = MYSOCKET.recv(1024)
-				MYSOCKET.send(b"USER "+usern.encode()+b"\r\n")
-				userrecv = MYSOCKET.recv(1048)
-				MYSOCKET.send(b"PASS "+paswd.encode()+b"\r\n")
-				paswrecv = MYSOCKET.recv(1048) 
-				MYSOCKET.send(b"HELP \r\n")
-				ignore = MYSOCKET.recv(2048)
-				MYSOCKET.send(b"HELP \r\n")
-				accept = MYSOCKET.recv(2048).decode("utf-8").replace("214 Help OK.","")
-				print(accept)
 			elif comando_user == "ls":
 				entrar.dir()
 			elif comando_user == "pa":
