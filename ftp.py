@@ -15,7 +15,7 @@ def Comandos():
 \033[1mComando [\033[m \033[1;32mLS\033[m \033[1m] - Para listar o diretório\033[m
 \033[1mComando [\033[m \033[1;32mCD\033[m \033[1m] - Para entrar dentro de um diretório\033[m
 \033[1mComando [\033[m \033[1;32mCL\033[m \033[1m] - Para limpar a tela\033[m
-\033[1mComando [\033[m \033[1;32mHP\033[m \033[1m] - Para visualizar os comandos do servidor\033[m
+\033[1mComando [\033[m \033[1;32mHP\033[m \033[1m] - Para visualizar os comandos do servidor (habilite o modo passivo primeiro)\033[m
 \033[1mComando [\033[m \033[1;32mPA\033[m \033[1m] - Para entrar no modo passivo (pode ser desconectado)\033[m
 \033[1mComando [\033[m \033[1;32mCW\033[m \033[1m] - Para entrar direto no diretório\033[m
 \033[1mComando [\033[m \033[1;32mDW\033[m \033[1m] - Para fazer o download de um arquivo\033[m
@@ -146,8 +146,8 @@ if logar == True:
 				passwords = paswd.encode()
 				try:
 					MYSOCKET.connect((rhost,rport))
-				except Exception as s:
-					print(s)
+				except:
+					pass
 				baner_pass = MYSOCKET.recv(1024)
 				MYSOCKET.send(b"USER "+usern.encode()+b"\r\n")
 				userrecv = MYSOCKET.recv(1048)
