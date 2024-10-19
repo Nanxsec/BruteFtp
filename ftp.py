@@ -142,8 +142,8 @@ if logar == True:
 							print("\033[1m[\033[m\033[1;31m-\033[m\033[1m]\033[m\033[1m Permissão negada!\033[m")
 			elif comando_user == "hp":
 				print("\033[1m[\033[m\033[1;36m+\033[m\033[1m]\033[m\033[1m Todos esses comandos foram para o meu painel de help,\033[m \033[1;32mDIGITE C\033[m \033[1mpara ver!\033[m\n\n")
-				usernames = userlogin.encode()
-				passwords = userpassw.encode()
+				usernames = usern.encode()
+				passwords = paswd.encode()
 				try:
 					MYSOCKET.connect((rhost,rport))
 				except Exception as s:
