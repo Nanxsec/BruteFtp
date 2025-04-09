@@ -7,7 +7,7 @@ from datetime import datetime
 
 # Auto complete
 comandos_disponiveis = [
-    "ls --> Lista Diretórios", "cd --> Entra em um diretório", "dw --> Baixa um arquivo", "up --> Uploar de um arquivo", "rn --> Renomear um arquivo", "mk --> Criar diretórios", "rm --> Remover", "ex --> alias para rm", "pw --> Mostra o diretorio atual", "cl --> limpa a tela",
+    "ls --> Lista Diretórios", "cd --> Entra em um diretório", "dw --> Baixa um arquivo", "up --> Upload de um arquivo", "rn --> Renomear um arquivo", "mk --> Criar diretórios", "rm --> Remover", "ex --> alias para rm", "pw --> Mostra o diretorio atual", "cl --> limpa a tela",
     "qt --> Fecha a shell", "pa --> Ativa o modo passivo (ok por padrão)", "ld --> Listagem detalhada", "c --> Mostra essa mensagem"
 ]
 
