@@ -31,7 +31,7 @@ Ao receber a shell, digite "c" para aparecer essa mensagem aqui abaixo:
       qt --> Fecha a shell
       pa --> Ativa o modo passivo (ok por padrão)
       ld --> Listagem detalhada
-      c --> Mostra essa mensagem
+      c  --> Mostra essa mensagem
 
 # Wordlist:
 
