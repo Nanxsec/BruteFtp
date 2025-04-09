@@ -67,6 +67,8 @@ def try_connect(host, port, user, password, use_ftps=False):
                 print(f"\033[1;32m[*] Password: {password}")
                 found_event.set()
                 save_success(host, port, user, password, use_ftps)
+                print("\033[1;32m[*] Iniciando a shell...\033[m")
+                sleep(0.2)
                 FTPShell(host, user, password, port, use_ftps=True).conectar()
                 return True
         else:
