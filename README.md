@@ -12,6 +12,27 @@ Caso ele retorne sucesso no brute force, irá mostrar a senha e também irá ini
     cd BruteFtp
     python3 ftp.py -h
 
+
+# Comandos:
+
+Ao receber a shell, digite "c" para aparecer essa mensagem aqui abaixo:
+
+      Comandos disponíveis:
+      ls --> Lista Diretórios
+      cd --> Entra em um diretório
+      dw --> Baixa um arquivo
+      up --> Uploar de um arquivo
+      rn --> Renomear um arquivo
+      mk --> Criar diretórios
+      rm --> Remover
+      ex --> alias para rm
+      pw --> Mostra o diretorio atual
+      cl --> limpa a tela
+      qt --> Fecha a shell
+      pa --> Ativa o modo passivo (ok por padrão)
+      ld --> Listagem detalhada
+      c --> Mostra essa mensagem
+
 # Wordlist:
 
 A wordlist padrão que deixei com o script contém algumas credênciais default e também senhas que coletei
