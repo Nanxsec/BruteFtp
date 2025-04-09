@@ -1,7 +1,6 @@
 admin:admin
 superuser:superuser
 administrador:administrador
-anonymous:anonymous
 ftp:ftp
 host:host
 rootaccount:root
@@ -62,3 +61,6 @@ thepgmar:2bIUrN&P$w
 oeshgbfw:2l#hKA!2TReg27
 dns:-^kxl]6xI_{@
 bfvnmuob:6HmR6nE)W8k;7g
+testee:testee
+pass:pass
+anonymous:anonymous
