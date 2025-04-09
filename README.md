@@ -12,6 +12,9 @@ Caso ele retorne sucesso no brute force, irá mostrar a senha e também irá ini
     cd BruteFtp
     python3 ftp.py -h
 
+# Salvamento:
+
+Não se preocupe, todas as credênciais válidas que ele encontrar, serão salvas dentro do arquivo ftp_success_log.json!
 
 # Comandos:
 
